@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab_3</title>
+  <link rel="stylesheet" href="style_1.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <fieldset>
+    <legend><p>Форма</p></legend>
+    <div class="form">
+     <form>   
+       <p>
+         <label for="name"> Ім'я: </label>
+         <input type="text" id="name" pattern="[A-Za-zА-Яа-яЁё]{2,20}" placeholder="Ім'я" required value="Sergey">
+       </p>
+       <p>
+         <label for="surname"> Прізвище: </label>
+         <input type="text" id="surname" pattern="[A-Za-zА-Яа-яЁё]{2,20}" placeholder="Прізвище" required value="Grishko"> 
+       </p>
+       <p>
+         <label for="city"> Місто: </label>
+         <input type="text" id="city" pattern="[A-Za-zА-Яа-яЁё]{0,20}" placeholder="Місто" required value="Che"> 
+       </p>
+       <p>
+         <label for="country"> Країна: </label>
+         <input type="text" id="country" pattern="[A-Za-zА-Яа-яЁё]{0,20}" placeholder="Країна" required value="UA"> 
+       </p>
+       <p>
+         <label for="index"> Індекс: </label>
+         <input type="tel" id="index" pattern="[0-9]{5}" placeholder="Індекс" required value="109900"> 
+       </p>
+       <div class="form-group">
+         <label for="email"> E-mail: </label> 
+         <input class="form-control" required type="text" name="email" id = "email"  oninput="email_validate(this.value);" />
+         <div id="status"></div>
+          <p>
+          <input type="submit" id="button"> <input type="reset">
+          </p>
+       </div>
+   </form>
+ </div>
+</fieldset>
+</body>
+</html>

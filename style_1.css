@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+     width: 320px;
+    background: #F1F1F1;
+}
+
+label {
+    width: 70px;
+    display: inline-block;
+}  
+
+legend  p {
+    font-size: 1.5em;
+    color: #47484B;
+}
+
+.form {
+    text-align: center;
+} 
+
+input [type=text], input [type=tel], input [type=email] {
+   /* background: #47484B;
+   
+   width: 170px; 
+   color: #cccccc; 
+   font-size: 14px;  */
+    width: 180px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=text]:focus {
+    border: 2px solid #555;
+    outline: none; 
+}
+
+[type=submit], [type=button], [type=reset] {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
